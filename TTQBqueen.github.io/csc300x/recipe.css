@@ -1,0 +1,90 @@
+/*-- Trinity Boler
+Css page for the remake of pie of Grandma's recipes */
+
+h1 {
+  font-size: 22pt;
+  display: flex;
+  justify-content: center;
+  color: #a4a400;
+  font-family: "Lucida Sans Unicode", "Helvetica", "Arial";
+  font-weight: bold;
+  background-size: contain;
+  margin: 10%;
+}
+
+h1 span {
+  background-color: #f0f0f0;
+}
+
+h2 {
+  font-size: 18pt;
+  color: #a4a400;
+  background-color: #f0f0f0;
+  text-decoration: underline;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "Lucida Sans Unicode", "Helvetica", "Arial";
+}
+.bold {
+  font-weight: bold;
+}
+
+body {
+  background-image: url("csc300x-hw2/silverware.jpg");
+}
+body pre {
+  color: #404040;
+  font-size: 11pt;
+  font-family: Georgia, Garamond;
+}
+a {
+  color: #a4a400;
+}
+.comments {
+  font-style: italic;
+  background-color: #ffffa8;
+  font-family: Georgia, Garamond;
+}
+#copyRight {
+  font-family: Georgia, Garamond;
+  font-family: monospace;
+}
+
+/*  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+pre {
+  font-family: monospace;
+  text-align: left;
+}
+ul {
+  list-style-image: url("csc300x-hw2/pie_icon.gif");
+}
+div {
+  border-bottom: 1px solid black;
+}
