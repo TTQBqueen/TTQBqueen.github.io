@@ -1,12 +1,12 @@
 /*-- Trinity Boler
 Css page for the HomePage of pie for Grandma's recipes */
 body {
-  background-image: url("csc300x-hw2/silverware.jpg");
+  background-image: url("./pics/silverware.jpg");
   padding: 20px;
 }
 
 h1 {
-  color: black;
+  color: white;
 }
 pre {
   display: inline-block;
@@ -45,7 +45,7 @@ h3 {
   align-items: center;
   padding: 0rem;
   border: 5px solid;
-  background-image: url("csc300x-hw2/background2.gif");
+  background-image: url("./pics/background2.gif");
   border-image-repeat: stretch;
   width: 100%;
 }
