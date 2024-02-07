@@ -1,0 +1,28 @@
+body{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color:rgb(119, 154, 120);
+color:rgb(255, 255, 255)
+
+}
+img{
+    max-height: 300px;
+    max-width: 300px;
+
+}
+#circle{
+    size:100%;
+    border-radius: 40%;
+    align-self: center;
+    z-index:-1;
+    top:40% !important ;
+
+    
+}
+#title , #circle{
+font-size: 50pt;
+text-align: center;
+position: absolute;
+top:20%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
