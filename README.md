@@ -1,2 +1,1 @@
-My GitHub Page Site
-Find link
+My GitHub Page Site Links
