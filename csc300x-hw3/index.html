@@ -12,21 +12,28 @@ HTML page for the Home page for Homework 3 -->
 
   <body>
 
+<!-- The sidebar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
+  <a href="index.html">About</a>
+  <a href="checkout.html">Cart</a>
+  <a href="#">Contact</a>
+</div>
 
-    <!-- The sidebar -->
-<!-- <aside class="sidebar">
-<a class="active" href="#HOME">HOME</a>
- <a href="#CART">CART</a>
-  <a href="#MEAL">MEAL</a>
-  <a href="#ABOUT">ABOUT</a>
-</aside> -->
+<!-- Use any element to open the sidenav -->
+
+<span id= "nav" OnClick="openNav()">&#9776; NAV</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+</div>
+    
 
 <div id = "top">
 <header id = "title">COMFORT EATZ</header>
 </div>
 
-<div>
-<main></main></div>
 
 
 
@@ -67,39 +74,40 @@ HTML page for the Home page for Homework 3 -->
 
 <!-- Samll pic for Gong -->
             <div id = "small">
-              <img class = "gongImg zoom" onClick="showItem1()" src="./k-Dog.jpeg" alt ="CornDog">
-              <img class = "gongImg zoom" onClick="showItem2()" src="./brownSugar.jpeg" alt ="Milk Tea">
-              <img class = "gongImg zoom" onClick="showItem3()"src="./SgreenTea.jpeg" alt ="Green tea">
+              <img class = "gongImg zoom" OnClick="showItem1()" src="./k-Dog.jpeg" alt ="CornDog">
+              <img class = "gongImg zoom" OnClick="showItem2()" src="./brownSugar.jpeg" alt ="Milk Tea">
+              <img class = "gongImg zoom" OnClick="showItem3()"src="./SgreenTea.jpeg" alt ="Green tea">
         </div>
         <!-- Pic despitiond -->
        
         <div>
-          <!-- Item 1 -->
-          <div id="hidden1" style="display: none" >
-        <pre id = "kdogText">
-          <b>Name: K-Dog</b>
-          A corn dog with a cheesy 
-          inside coated with sugar
-          <u>Price:</u> <span class = "price">$5.12</span> <button class = "cart">ADD TO CART</button>
-        </pre>
+ <!-- Item 1 -->
+ <div class = "littleDep"> 
+<div id="hidden1" style="display: none" >
+<pre id = "kdogText">
+<b>Name: K-Dog</b>
+A corn dog with a cheesy 
+inside coated with sugar
+<u>Price:</u> <span class = "price">$5.12</span> <button class = "cart">ADD TO CART</button>
+</pre>
       </div>
       <!-- Ieem 2 -->
       <div id="hidden2" style="display: none">
-        <pre id = "BrownSug">
-          <b>Name: Brown Suager milk tea</b>
-          A corn dog with a cheesy 
-          inside coated with sugar
-          <u>Price:</u> <span class = "price">$5.12</span> <button>ADD TO CART</button>
-        </pre>
+<pre id = "BrownSug">
+<b>Name: Brown Suager milk tea</b>
+fresh milk, brown sugar syrup, black tea 
+and tapioca pearls
+<u>Price:</u> <span class = "price">$7.25</span> <button>ADD TO CART</button>
+</pre>
 </div>
 <!-- Item 3 -->
-<div id="hidden3" style="display: none">
-        <pre id = "GreenTea">
-          <b>Name: Strawbrey Green Tea</b>
-          A corn dog with a cheesy 
-          inside coated with sugar
-          <u>Price:</u> <span class = "price">$5.12</span> <button>ADD TO CART</button>
-        </pre>
+    <div id="hidden3" style="display: none">
+<pre id = "GreenTea">
+<b>Name: Strawbrey Green Tea</b>
+Iced green tea with strawberry syrup 
+<u>Price:</u> <span class = "price">$6.50</span> <button>ADD TO CART</button>
+</pre>
+</div>
 </div>
         </div>
           
@@ -134,13 +142,13 @@ HTML page for the Home page for Homework 3 -->
 
 <!-- Samll pic for Coffee -->
 <div id = "small">
-  <img class = "gongImg zoom" onClick="showItem4()" src="./chDanish.jpeg" alt ="CornDog">
-  <img class = "gongImg zoom" onClick="showItem5()" src="./panini.jpeg" alt ="Milk Tea">
-  <img class = "gongImg zoom" onClick="showItem6()" src="./coffee.jpeg" alt ="Green tea">
+  <img class = "gongImg zoom" onclick="showItem4()" src="./chDanish.jpeg" alt ="CornDog">
+  <img class = "gongImg zoom" OnClick="showItem5()" src="./panini.jpeg" alt ="Milk Tea">
+  <img class = "gongImg zoom" OnClick="showItem6()" src="./coffee.jpeg" alt ="Green tea">
 </div>
 <!-- Pic despitiond -->
 
-<div>
+<div class = "littleDep"> 
 <!-- Item 1 -->
 <div id="hidden4" style="display: none" >
 <pre id = "kdogText">
@@ -153,7 +161,8 @@ fresh baked Danish filled with cream cheese.
 <div id="hidden5" style="display: none">
 <pre id = "BrownSug">
 <b>Name: Sweet & Spicy Turkey Panini</b>
-Bacon, pepper jack cheese, grilled onions, and raspberry honey mustar.
+Bacon, pepper jack cheese, grilled onions, and 
+raspberry honey mustar.
 <u>Price:</u> <span class = "price">$12.00</span> <button>ADD TO CART</button>
 </pre>
 </div>
@@ -161,7 +170,8 @@ Bacon, pepper jack cheese, grilled onions, and raspberry honey mustar.
 <div id="hidden6" style="display: none">
 <pre id = "GreenTea">
 <b>Name: Iced Latte</b>
-A chilled coffee beverage that's made by mixing espresso with chilled milk, simple syrup, and ice cubes.
+A chilled coffee beverage that's made by mixing 
+espresso with chilled milk, simple syrup, and ice cubes.
 <u>Price:</u> <span class = "price">$6.15</span> <button>ADD TO CART</button>
 </pre>
 </div>
@@ -204,18 +214,19 @@ A chilled coffee beverage that's made by mixing espresso with chilled milk, simp
 
 <!-- Samll pic for Gong -->
 <div id = "small">
-  <img class = "gongImg zoom" onClick="showItem7()" src="./butterchicken.jpeg" alt ="CornDog">
-  <img class = "gongImg zoom" onClick="showItem8()" src="./nana.avif" alt ="Milk Tea">
-  <img class = "gongImg zoom" onClick="showItem9()" src="./mango.jpeg" alt ="Green tea">
+  <img class = "gongImg zoom" OnClick="showItem7()" src="./butterchicken.jpeg" alt ="CornDog">
+  <img class = "gongImg zoom" OnClick="showItem8()" src="./nana.avif" alt ="Milk Tea">
+  <img class = "gongImg zoom" OnClick="showItem9()" src="./mango.jpeg" alt ="Green tea">
 </div>
 <!-- Pic despitiond -->
 
-<div>
+<div class = "littleDep"> 
 <!-- Item 1 -->
 <div id="hidden7" style="display: none" >
 <pre id = "kdogText">
 <b>Name: Butter Chicken Masala</b>
-curry made from chicken with a spiced tomato and butter (makhan) sauce.
+curry made from chicken with a spiced tomato and 
+butter (makhan) sauce.
 <u>Price:</u> <span class = "price">$14.13</span> <button class = "cart">ADD TO CART</button>
 </pre>
 </div>
@@ -223,7 +234,8 @@ curry made from chicken with a spiced tomato and butter (makhan) sauce.
 <div id="hidden8" style="display: none">
 <pre id = "BrownSug">
 <b>Name: Garlic Cheese Naan</b>
-Flour bread baked in a clay oven with garlic infused butter and a cheesy layer in between.
+Flour bread baked in a clay oven with garlic infused 
+butter and a cheesy layer in between.
 <u>Price:</u> <span class = "price">$3.64</span> <button>ADD TO CART</button>
 </pre>
 </div>
@@ -231,7 +243,9 @@ Flour bread baked in a clay oven with garlic infused butter and a cheesy layer i
 <div id="hidden9" style="display: none">
 <pre id = "GreenTea">
 <b>Name: Mango Lassi</b>
-A Creamy yogurt-based drink from India made with mango, some milk, a little sugar, and a bit of cardamom.
+A Creamy yogurt-based drink from India made with mango, 
+some milk, a little sugar, 
+and a bit of cardamom.
 <u>Price:</u> <span class = "price">$4.11</span> <button>ADD TO CART</button>
 </pre>
 </div>
@@ -249,7 +263,13 @@ A Creamy yogurt-based drink from India made with mango, some milk, a little suga
 </div>
 
 </article>
-
+<footer>
+  <div id = "end">
+  <p>Home Work 3</p>
+  <p>Febuary 12, 2024</p>
+  <p>Trinity Boler</p>
+</div>
+</footer>
 
   </body>
 </html>

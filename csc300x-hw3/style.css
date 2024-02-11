@@ -31,7 +31,17 @@ border: 4px solid rgb(62, 39, 9);
 color: white;
 background-image: url("./image-food.webp");
 }
+#nav{
+  font-size: 30px;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: rgb(62, 39, 9);
 
+}
+span:hover{
+  opacity: 0.5;
+  
+}
 
 #bio{
     margin: 10%;
@@ -41,7 +51,7 @@ background-image: url("./image-food.webp");
 .flexImg{
     display: flex;
     justify-content: space-around;
-   margin-left: 10%;
+    margin-left: 10%;
 
 }
 .names{
@@ -65,18 +75,19 @@ background-image: url("./image-food.webp");
   align-items: center;
 }
 
-.hidden{
+/* .hidden{
   display: none;
 }
 .hidden:hover {
   display: block;
-}
+} */
 
 
 .mealText{
   flex-flow:row wrap;
   display: none;
   flex-wrap:wrap;
+ 
   
 }
 .gongImg{
@@ -95,3 +106,64 @@ background-image: url("./image-food.webp");
   transform: scale(1.5);
 
 }
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(225, 125, 107); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+footer{
+  background-color: rgb(62, 39, 9);
+  margin-top: 10%;
+  height: 150px;
+  width: 100%;
+}
+#end{
+  padding: 2%;
+  margin: 5%;
+  font-family: monospace;
+  text-align: left;
+}
+.littleDep{
+  margin-left: 5%;
+}
+
