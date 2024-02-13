@@ -17,7 +17,7 @@ HTML page for the Home page for Homework 3 -->
  <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
   <a href="index.html">About</a>
-  <a href="checkout.html">Cart</a>
+  <a href="checkout.html">Meals</a>
   <a href="#">Contact</a>
 </div> 
 
@@ -27,16 +27,17 @@ HTML page for the Home page for Homework 3 -->
 <header>
   <div class="title">PRODUCT LIST</div>
   <div class="icon-cart">
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <svg class ="zoom" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
       <path fill-rule="evenodd" d="M4 4c0-.6.4-1 1-1h1.5c.5 0 .9.3 1 .8L7.9 6H19a1 1 0 0 1 1 1.2l-1.3 6a1 1 0 0 1-1 .8h-8l.2 1H17a3 3 0 1 1-2.8 2h-2.4a3 3 0 1 1-4-1.8L5.7 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
     </svg>
-    <span>0</span>
+    <!-- <span id = "CartNum">0</span> -->
     </header>
- 
+ <div id = "mealtitle">Pick Your Meals</div>
 <!-- Item Listings -->
+<div class = "names"><h2>Gong-cha</h2></div>
 <!-- Bobba place 1-->
 <secrion id = BobaPlace>
-<div class="ListProducts">
+<div class="ListProducts" id ="KDDisplay">
   <div class="items">
     <img src="./k-Dog.jpeg" alt="K-Dog from Gohoncha">
 <h2>K-Dog</h2>
@@ -52,7 +53,7 @@ HTML page for the Home page for Homework 3 -->
 <div class="ListProducts">
   <div class="items">
     <img src="./brownSugar.jpeg" alt="Brownsuager Milk tea from Gohoncha">
-<h2>Brown Suager milk tea</h2>
+<h2>Brown Sugar Milk Tea</h2>
 <div type= "text" id="brownPrice">
   7.25
 </div>
@@ -77,8 +78,94 @@ HTML page for the Home page for Homework 3 -->
 </div>
 </secrion>
 
+<div class = "names"><h2>Coffeeology</h2></div>
+<section  id ="Coffeeology">
+  <!-- Coffee place 1-->
+<div class="ListProducts">
+  <div class="items">
+    <img src="./chDanish.jpeg" alt="Danish from coffeeology facebook">
+<h2>Cheess Danish</h2>
+<div type= "text" id="DanishPrice">
+  4.35
+</div>
+<button onclick="CDPlus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
+<!-- Coffee place 2-->
+<div class="ListProducts">
+  <div class="items">
+    <img src="./panini.jpeg" alt ="Piniie from coffeeology facebook">
+<h2>Sweet & Spicy Turkey Panini</h2>
+<div type= "text" id="PaniniPrice">
+  12.00
+</div>
+<button onclick="BSMilkPlus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
+<!-- Coffee place 3-->
+<div class="ListProducts">
+  <div class="items">
+    <img src="./coffee.jpeg" alt ="Coffee from coffeeology facebook">
+<h2>Iced Latte</h2>
+<div type= "text" id="CoffeePrice">
+  6.12
+</div>
+<button onclick="BSMilkPlus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
 
 
+</section>
+<div class = "names"><h2>Raaz Indian Kitchen</a></h2></div>
+
+<section id = "RazzPlace">
+  <!-- Raaz place 1-->
+  
+  <div class="ListProducts">
+    <div class="items">
+      <img  src="./butterchicken.jpeg" alt ="Butter Chicken from Raaz kitchen page">
+      <h2>Butter Chicken Masala</h2>
+  <div type= "text" id="brownPrice">
+    14.13
+  </div>
+  <button onclick="BCMPlus()" >
+      ADD TO CART
+  </button>
+    </div>
+  </div>
+  <!-- Raaz place 2-->
+  <div class="ListProducts">
+    <div class="items">
+      <img src="./nana.avif" alt ="Garlic nana from Raaz kitchen page">
+  <h2>Garlic Cheese Naan</h2>
+  <div type= "text" id="brownPrice">
+    3.64
+  </div>
+  <button onclick="GNPlus()" >
+      ADD TO CART
+  </button>
+    </div>
+  </div>
+  <!-- Raaz place 3-->
+  <div class="ListProducts">
+    <div class="items">
+      <img src="./mango.jpeg" alt ="Mango Drink from Raaz kitchen page">
+  <h2>Mango Lassi</h2>
+  <div type= "text" id="brownPrice">
+    4.11
+  </div>
+  <button onclick="MLPlus()" >
+      ADD TO CART
+  </button>
+    </div>
+  </div>
+</section>
 
 
 
@@ -108,19 +195,20 @@ HTML page for the Home page for Homework 3 -->
     <h1>Shopping Cart</h1>
     <div class ="listCart">
       <div class ="item">
+
         <!-- Boba place 1 -->
         <div class = "image">
           <img src ="./k-Dog.jpeg" alt ="k-dog">
           </div>
           <div class = "name">
-            NAME
+            K-Dog
           </div>
           <div class="totalPrive">
             $5.12 
           </div>
           <div class="quantity">
               <span onclick="Kdogminus()"><</span>
-              <span class= "numOf">1</span>
+              <span class= "numOf">0</span>
               <span onclick="Kdogplus()">></span>
           </div>
  <!-- Boba place 2 -->
@@ -128,14 +216,14 @@ HTML page for the Home page for Homework 3 -->
           <img src="./brownSugar.jpeg" alt="Brownsuager Milk tea from Gohoncha">
           </div>
           <div class = "name">
-            Brown Suager milk tea
+            Brown Sugar Milk Tea
           </div>
           <div class="totalPrive">
             7.25 
           </div>
           <div class="quantity">
               <span onclick="BSMminus()"><</span>
-              <span class= "BSMnumOf">1</span>
+              <span class= "BSMnumOf">0</span>
               <span onclick="BSMplus()">></span>
           </div>
            <!-- Boba place 3 -->
@@ -150,20 +238,118 @@ HTML page for the Home page for Homework 3 -->
           </div>
           <div class="quantity">
               <span onclick="SGTminus()"><</span>
-              <span class= "SGTnumOf">1</span>
+              <span class= "SGTnumOf">0</span>
               <span onclick="SGTplus()">></span>
           </div>
 
-          
-        </div>
-        
-      </div>
-      <div class="btn">
-        <button class="close">Close</button>
-        <button class ="checkOut">Check Out</button>
-      </div>
 
-    </div>
+ <!-- coffee place 1 -->
+ <div class = "image">
+  <img src="./chDanish.jpeg" alt="Danish from coffeeology facebook">
+  </div>
+  <div class = "name">
+    Cheess Danish
+  </div>
+  <div class="totalPrive">
+    $4.35
+  </div>
+  <div class="quantity">
+      <span onclick="CDminus()"><</span>
+      <span class= "CDnumOf">0</span>
+      <span onclick="CDplus()">></span>
+  </div>
+<!-- Coffee place 2 -->
+<div class = "image">
+  <img src="./panini.jpeg" alt ="Piniie from coffeeology facebook">
+</div>
+  <div class = "name">
+    Sweet & Spicy Turkey Panini
+  </div>
+  <div class="totalPrive">
+    $12.00 
+  </div>
+  <div class="quantity">
+      <span onclick="SSPminus()"><</span>
+      <span class= "SSPnumOf">0</span>
+      <span onclick="SSPplus()">></span>
+  </div>
+   <!-- Coffee place 3 -->
+<div class = "image">
+  <img src="./coffee.jpeg" alt ="Coffee from coffeeology facebook">
+</div>
+  <div class = "name">
+    Iced Latte
+  </div>
+  <div class="totalPrive">
+    $6.12 
+  </div>
+  <div class="quantity">
+      <span onclick="ILminus()"><</span>
+      <span class= "ILnumOf">0</span>
+      <span onclick="ILplus()">></span>
+  </div>
+
+ <!-- Raaz place 1 -->
+ <div class = "image">
+  <img  src="./butterchicken.jpeg" alt ="Butter Chicken from Raaz kitchen page">
+</div>
+  <div class = "name">
+    Butter Chicken Masala
+  </div>
+  <div class="totalPrive">
+    $14.13
+  </div>
+  <div class="quantity">
+      <span onclick="BCMminus()"><</span>
+      <span class= "BCMnumOf">0</span>
+      <span onclick="BCMplus()">></span>
+  </div>
+<!-- Raaz place 2 -->
+<div class = "image">
+  <img src="./nana.avif" alt ="Garlic nana from Raaz kitchen page">
+</div>
+  <div class = "name">
+    Garlic Cheese Naan
+  </div>
+  <div class="totalPrive">
+    $3.64 
+  </div>
+  <div class="quantity">
+      <span onclick="GNminus()"><</span>
+      <span class= "GNnumOf">0</span>
+      <span onclick="GNplus()">></span>
+  </div>
+   <!-- Raaz place 3 -->
+<div class = "image">
+  <img src="./mango.jpeg" alt ="Mango Drink from Raaz kitchen page">
+</div>
+  <div class = "name">
+    Mango Lassi
+  </div>
+  <div class="totalPrive">
+    $4.11 
+  </div>
+  <div class="quantity">
+      <span onclick="MLminus()"><</span>
+      <span class= "MLnumOf">0</span>
+      <span onclick="MLplus()">></span>
+  </div>
+
+
+         
+  
+
+
+        </div>
+    
+</div>
+
+
+<div class="btn">
+<button class="close">Close</button>
+<button class ="checkOut">Check Out</button>
+</div>
+    </div></div>
 </section>
 
 

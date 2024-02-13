@@ -138,9 +138,22 @@ body.showCart .container{
    .listCart{
     overflow: auto;
    }
-   
-   #BobaPlace{
+   .listCart .button{
+    cursor: pointer;
+    
+   }
+
+   #BobaPlace, #Coffeeology, #RazzPlace{
     display: flex;
+    margin: 10%;
+   }
+   svg:hover{
+    color:rgb(225, 125, 107);
+   }
+
+   #mealtitle{
+    text-align: center;
+    font-size: 40px;
    }
    
 

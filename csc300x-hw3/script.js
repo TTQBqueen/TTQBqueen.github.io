@@ -97,6 +97,7 @@
       })
 
 // add and subtracting the buttons
+//Boba
       function Kdogplus(){
   const numberElement = document.querySelector(".numOf");
   const number = parseInt(numberElement.innerText, 10) + 1;
@@ -104,8 +105,14 @@
 }
 function Kdogminus(){
   const numberElement = document.querySelector(".numOf");
+  
+  if (document.numOf === 0){
+    document.getElementById('KDDisplay').style.display = 'none';
+  }
+  else {
+  document.getElementById('KDDisplay').style.display = 'block';
   const number = parseInt(numberElement.innerText, 10) - 1;
-  numberElement.innerText = number;
+  numberElement.innerText = number;}
 }
 function BSMplus(){
   const numberElement = document.querySelector(".BSMnumOf");
@@ -125,6 +132,72 @@ function SGTplus(){
 }
 function SGTminus(){
   const numberElement = document.querySelector(".SGTnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+
+//Coffee
+function CDplus(){
+  const numberElement = document.querySelector(".CDnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function CDminus(){
+  const numberElement = document.querySelector(".CDnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+function SSPplus(){
+  const numberElement = document.querySelector(".SSPnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function SSPminus(){
+  const numberElement = document.querySelector(".SSPnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+
+function ILplus(){
+  const numberElement = document.querySelector(".ILnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function ILminus(){
+  const numberElement = document.querySelector(".ILnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+
+//Raaz
+function BCMplus(){
+  const numberElement = document.querySelector(".BCMnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function CDminus(){
+  const numberElement = document.querySelector(".BCMnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+function GNplus(){
+  const numberElement = document.querySelector(".GNnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function GNminus(){
+  const numberElement = document.querySelector(".GGNnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+
+function MLplus(){
+  const numberElement = document.querySelector(".MLnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function MLminus(){
+  const numberElement = document.querySelector(".MLnumOf");
   const number = parseInt(numberElement.innerText, 10) - 1;
   numberElement.innerText = number;
 }
