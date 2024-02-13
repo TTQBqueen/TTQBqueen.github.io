@@ -82,4 +82,49 @@
         document.getElementById("mySidenav").style.width = "0";
       }
 
-      
+
+      // Shooping cart
+      let iconCart = document.querySelector('.icon-cart');
+      let closeCart = document.querySelector('.close')
+      let body = document.querySelector('body');
+      // let moreButton = document.querySelector('.listCart');
+
+      iconCart.addEventListener('click', ()=> { //Passes in a class
+        body. classList.toggle('showCart'); //if it doesnt have the classs name show cart it will add it
+      })
+      closeCart.addEventListener('click', ()=> { 
+        body. classList.toggle('showCart'); 
+      })
+
+// add and subtracting the buttons
+      function Kdogplus(){
+  const numberElement = document.querySelector(".numOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function Kdogminus(){
+  const numberElement = document.querySelector(".numOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+function BSMplus(){
+  const numberElement = document.querySelector(".BSMnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function BSMminus(){
+  const numberElement = document.querySelector(".BSMnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}
+
+function SGTplus(){
+  const numberElement = document.querySelector(".SGTnumOf");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+}
+function SGTminus(){
+  const numberElement = document.querySelector(".SGTnumOf");
+  const number = parseInt(numberElement.innerText, 10) - 1;
+  numberElement.innerText = number;
+}

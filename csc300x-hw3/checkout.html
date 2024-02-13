@@ -8,31 +8,163 @@ HTML page for the Home page for Homework 3 -->
     <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="COstyle.css"/>
-    <title>Main Page</title>
+    <title>Checkout</title>
   </head>
 
   <body>
 
 <!-- The sidebar -->
-<div id="mySidenav" class="sidenav">
+ <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
   <a href="index.html">About</a>
   <a href="checkout.html">Cart</a>
   <a href="#">Contact</a>
-</div>
+</div> 
 
 <!-- Use any element to open the sidenav -->
-
 <span id= "nav" OnClick="openNav()">&#9776; NAV</span>
     
+<header>
+  <div class="title">PRODUCT LIST</div>
+  <div class="icon-cart">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M4 4c0-.6.4-1 1-1h1.5c.5 0 .9.3 1 .8L7.9 6H19a1 1 0 0 1 1 1.2l-1.3 6a1 1 0 0 1-1 .8h-8l.2 1H17a3 3 0 1 1-2.8 2h-2.4a3 3 0 1 1-4-1.8L5.7 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+    </svg>
+    <span>0</span>
+    </header>
+ 
+<!-- Item Listings -->
+<!-- Bobba place 1-->
+<secrion id = BobaPlace>
+<div class="ListProducts">
+  <div class="items">
+    <img src="./k-Dog.jpeg" alt="K-Dog from Gohoncha">
+<h2>K-Dog</h2>
+<div type= "text" id="Kdog">
+  5.12
+</div>
+<button onclick="Kdogplus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
+ <!-- Bobba place 2-->
+<div class="ListProducts">
+  <div class="items">
+    <img src="./brownSugar.jpeg" alt="Brownsuager Milk tea from Gohoncha">
+<h2>Brown Suager milk tea</h2>
+<div type= "text" id="brownPrice">
+  7.25
+</div>
+<button onclick="BSMilkPlus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
+
+<!-- Bobba place 3 -->
+<div class="ListProducts">
+  <div class="items">
+    <img src="./SgreenTea.jpeg" alt="Strawbrey Green Tea from Gohoncha">
+<h2>Strawbrey Green Tea</h2>
+<div type= "text" id="SGTPrice">
+  6.50
+</div>
+<button onclick="SGTPlus()" >
+    ADD TO CART
+</button>
+  </div>
+</div>
+</secrion>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Check out cart -->
 <section>
+
 <div class ="cart-Container"></div>
+
+<div class ="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class ="listCart">
+      <div class ="item">
+        <!-- Boba place 1 -->
+        <div class = "image">
+          <img src ="./k-Dog.jpeg" alt ="k-dog">
+          </div>
+          <div class = "name">
+            NAME
+          </div>
+          <div class="totalPrive">
+            $5.12 
+          </div>
+          <div class="quantity">
+              <span onclick="Kdogminus()"><</span>
+              <span class= "numOf">1</span>
+              <span onclick="Kdogplus()">></span>
+          </div>
+ <!-- Boba place 2 -->
+        <div class = "image">
+          <img src="./brownSugar.jpeg" alt="Brownsuager Milk tea from Gohoncha">
+          </div>
+          <div class = "name">
+            Brown Suager milk tea
+          </div>
+          <div class="totalPrive">
+            7.25 
+          </div>
+          <div class="quantity">
+              <span onclick="BSMminus()"><</span>
+              <span class= "BSMnumOf">1</span>
+              <span onclick="BSMplus()">></span>
+          </div>
+           <!-- Boba place 3 -->
+        <div class = "image">
+          <img src="./SgreenTea.jpeg" alt="Strawbrey Green Tea from Gohoncha">
+          </div>
+          <div class = "name">
+            Strawbrey Green Tea
+          </div>
+          <div class="totalPrive">
+            $6.50 
+          </div>
+          <div class="quantity">
+              <span onclick="SGTminus()"><</span>
+              <span class= "SGTnumOf">1</span>
+              <span onclick="SGTplus()">></span>
+          </div>
+
+          
+        </div>
+        
+      </div>
+      <div class="btn">
+        <button class="close">Close</button>
+        <button class ="checkOut">Check Out</button>
+      </div>
+
+    </div>
 </section>
-
-
-
-
 
 
 <!-- Footer -->
