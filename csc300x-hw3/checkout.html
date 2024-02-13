@@ -32,7 +32,11 @@ HTML page for the Home page for Homework 3 -->
     </svg>
     <!-- <span id = "CartNum">0</span> -->
     </header>
+
+
+
  <div id = "mealtitle">Pick Your Meals</div>
+
 <!-- Item Listings -->
 <div class = "names"><h2>Gong-cha</h2></div>
 <!-- Bobba place 1-->
@@ -41,10 +45,10 @@ HTML page for the Home page for Homework 3 -->
   <div class="items">
     <img src="./k-Dog.jpeg" alt="K-Dog from Gohoncha">
 <h2>K-Dog</h2>
-<div type= "text" id="Kdog">
+<div type= "text" id="Kdogprice">
   5.12
 </div>
-<button onclick="Kdogplus()" >
+<button id = "addOne" onclick="Kdogplus()" >
     ADD TO CART
 </button>
   </div>
@@ -197,13 +201,14 @@ HTML page for the Home page for Homework 3 -->
       <div class ="item">
 
         <!-- Boba place 1 -->
+    
         <div class = "image">
           <img src ="./k-Dog.jpeg" alt ="k-dog">
           </div>
           <div class = "name">
             K-Dog
           </div>
-          <div class="totalPrive">
+          <div id="KDtotalPrice">
             $5.12 
           </div>
           <div class="quantity">
@@ -211,6 +216,8 @@ HTML page for the Home page for Homework 3 -->
               <span class= "numOf">0</span>
               <span onclick="Kdogplus()">></span>
           </div>
+
+
  <!-- Boba place 2 -->
         <div class = "image">
           <img src="./brownSugar.jpeg" alt="Brownsuager Milk tea from Gohoncha">
@@ -344,10 +351,10 @@ HTML page for the Home page for Homework 3 -->
     
 </div>
 
-
+<div id ="total">Total: </div>
 <div class="btn">
 <button class="close">Close</button>
-<button class ="checkOut">Check Out</button>
+<button id ="checkOut">Check Out</button>
 </div>
     </div></div>
 </section>

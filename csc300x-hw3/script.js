@@ -96,6 +96,17 @@
         body. classList.toggle('showCart'); 
       })
 
+
+      function mulitTwo(num1, num2)
+      {
+      let result=num1+num2;
+      return result;
+      }
+
+
+
+
+
 // add and subtracting the buttons
 //Boba
       function Kdogplus(){
@@ -105,15 +116,26 @@
 }
 function Kdogminus(){
   const numberElement = document.querySelector(".numOf");
-  
-  if (document.numOf === 0){
-    document.getElementById('KDDisplay').style.display = 'none';
+  const shoopingItem = document.querySelector("#KDDisplay");
+  if (numberElement == '0'){
+    remove(shoopingItem);
   }
-  else {
-  document.getElementById('KDDisplay').style.display = 'block';
   const number = parseInt(numberElement.innerText, 10) - 1;
-  numberElement.innerText = number;}
+  numberElement.innerText = number;
 }
+
+function remove(event) {
+const SpsanNum = event.currentTarget;
+SpsanNum.classList.remove('shown');
+SpsanNum.classList.add('hide');
+}
+
+
+
+
+
+
+
 function BSMplus(){
   const numberElement = document.querySelector(".BSMnumOf");
   const number = parseInt(numberElement.innerText, 10) + 1;
@@ -200,4 +222,25 @@ function MLminus(){
   const numberElement = document.querySelector(".MLnumOf");
   const number = parseInt(numberElement.innerText, 10) - 1;
   numberElement.innerText = number;
+}
+
+
+// Math
+function MulitTwo(num1, num2)
+{
+let result=num1*num2;
+return result;
+}
+
+
+const addButton = document.querySelector("#checkOut"); //Set add button
+addButton.addEventListener("click", displaySum); //Event
+
+function displaySum(event){ 
+    //Make function
+const num1 = document.querySelector("#Kdogprice").value;//geting num on form user
+const num2 = document.querySelector("#numOf").value;//Git secounf number
+const res = MulitTwo(parseInt(num1),parseInt(num2)); //Add 
+ let resultDiv = document.querySelector("#total"); //
+resultDiv.textContent = "Total: $" + res;
 }
