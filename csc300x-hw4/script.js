@@ -27,7 +27,7 @@ function selectChoice() {
 
     // Show "waiting" for the opponent during the delay
     var opponentImage = document.getElementById("opponent-choice");
-    opponentImage.src = ""; // Clear the image
+    opponentImage.src = "./thinking.jpeg"; // Clear the image
     opponentImage.alt = "Thinking...";
     opponentImage.style.border = "2px solid black"; // Reset the border color
 
@@ -43,45 +43,46 @@ function selectChoice() {
          yourScore += 1;
          opponentScore += 1;
          
-         YouImage.src = ""; // Clear the image
+         YouImage.src = "./tie.jpeg"; // Clear the image
          YouImage.alt = "Tie";
      }
      else {
          if (you == "rock") {
              if (opponent == "scissors") {
                  yourScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./winnerIsYou.jpeg"; 
                  YouImage.alt = "You Win";
 
              }
              else if (opponent == "paper") {
                  opponentScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./lose.jpeg"; 
                  YouImage.alt = "You Lose";
              }
          }
          else if (you == "scissors") {
              if (opponent == "paper") {
                  yourScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./winnerIsYou.jpeg"; 
+
                  YouImage.alt = "You Win";
              }
              else if (opponent == "rock") {
                  opponentScore += 1;
                  yourScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./winnerIsYou.jpeg"; 
                  YouImage.alt = "You Win";
              }
          }
          else if (you == "paper") {
              if (opponent == "rock") {
                  yourScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./winnerIsYou.jpeg"; 
                  YouImage.alt = "You Win";
              }
              else if (opponent == "scissors") {
                  opponentScore += 1;
-                 YouImage.src = ""; // Clear the image
+                 YouImage.src = "./lose.jpeg"; 
                  YouImage.alt = "You Lose";
              }
          }
