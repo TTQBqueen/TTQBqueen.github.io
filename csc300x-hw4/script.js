@@ -116,7 +116,7 @@ function RESET(){
             // Clear choices
             document.getElementById("your-choice").src = "";
             document.getElementById("opponent-choice").src = "";
-            YouImage.alt = "Pick One";
-            OpponentImage.alt ="Waiting on you...";
+            YouImage.src ="./question-mark.PNG";
+            OpponentImage.src ="./question-mark.PNG";
 
 }
