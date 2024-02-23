@@ -1,26 +1,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #opponent-choice {
     width: 240px;
     height: 240px;
-    /* background-color: cyan; */
+    border: 2px dotted black;
     margin-top: 10px;
 }
 
 #your-choice {
     width: 240px;
     height: 240px;
-    /* background-color: yellow; */
+    border: 2px dotted black;
     margin-top: 10px; 
 }
 
 #choices {
     width: 240px;
     height: 80px;
-    /* background-color: green; */
+
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -30,7 +32,28 @@ body {
     height: 80px;
 }
 #choices{
-   
     display: flex;
     justify-content: center;
 }
+button{
+    height:30px;
+    margin-top: 470px;
+    border: none;
+    background-color: rgb(191, 191, 222);
+    border-radius: 20%;
+}
+.space{
+    display: flex;
+    width: 240px;
+   height: 80px;
+    margin-top: 10px;
+
+    
+
+}
+#opponent-choices{
+    width: 240px;
+    height: 80px;
+    border: 2px solid black;
+}
+
