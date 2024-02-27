@@ -6,10 +6,9 @@
     padding-top: 10px;
 
    }
-
-   svg{
+   /* svg{
     width: 30px;
-   }
+   } */
    header{
     display: flex;
     align-items: center;
