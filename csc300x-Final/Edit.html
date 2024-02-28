@@ -64,9 +64,8 @@
        <option value="1">Catagor 4</option>
     </select></span>
     <br>
-    <!-- Product Details Form -->
-    <form id="productForm" onsubmit="saveProduct(event)">
-        
+    <!-- Product Details Form  add onsubmit="saveProduct(event)"-->
+    <form id="productForm">
         <label for="productName">Product Name:</label>
         <input type="text" id="productName" required>
         <br>
@@ -86,8 +85,7 @@
         <label for="productPrice">Product Price:</label>
         <input type="number" id="productPrice" step="1.00" required>
         <br>
-
-        <input type="submit" value="Save Changes">
+        <button type="submit">Save</button>
     </form>
 </div>
     <script>
