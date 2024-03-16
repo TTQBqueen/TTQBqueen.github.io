@@ -1,0 +1,73 @@
+#demo{
+  display: none;
+}
+body{
+  background-color: rgb(26, 25, 25);
+  margin: 5%;
+}
+h1{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+
+}
+h2{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size:20px;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+    gap: 20px;
+      height: 700px;
+      
+}
+
+#Search{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.repository {
+  background-color: white;  
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+
+  .repository h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .repository h4 {
+    font-size: 20px;
+  
+  }
+  .repository a{
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  .repository p {
+    margin: 5px 0;
+    
+  }
+
+  .repository .dates {
+    font-style: italic;
+  }
+
+  .repository .separator {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  img{
+    height:60px;  }
